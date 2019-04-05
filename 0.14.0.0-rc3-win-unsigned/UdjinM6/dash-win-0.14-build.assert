@@ -1,16 +1,16 @@
 --- !!omap
 - out_manifest: |
-    8535ef3518b78033095fd6fbc7b419c45e6e30b0c70b92e419133800903e7035  dashcore-0.14.0-win-unsigned.tar.gz
-    ab2ba51be4ca972ba31299431b5c09228e2629e4571b87747e863f673add26dd  dashcore-0.14.0-win32-debug.zip
-    136a311f95d2bc3c88175c70e7615cfab97a7025ff5cd75d67fd6527df0f7ea2  dashcore-0.14.0-win32-setup-unsigned.exe
-    9f897e18a3eaa6900c27806902a07ae3dc3099d6dc49461f4df405dd9d3a8741  dashcore-0.14.0-win32.zip
-    d0f48647956d2193bc391b3dc399029a663c0465413a52c39902642cb38bd77a  dashcore-0.14.0-win64-debug.zip
-    0f61c94305f8c9dc5513189a5a96f842687f05673026eab5c9958b9b1ad07b81  dashcore-0.14.0-win64-setup-unsigned.exe
-    2bc286dd6571a896cdf0e0e4671b38b2f27ce1af897fb91b524541c0bab420b3  dashcore-0.14.0-win64.zip
-    c21c8943fc19374c29a273119724529fb5ee4933299ffae581bbe50932d3d31a  src/dashcore-0.14.0.tar.gz
+    b3f0990b46fd881ae7c64010b305b924ef520d53595563c4d6d72a75d8543ee0  dashcore-0.14.0-win-unsigned.tar.gz
+    8149ed1adbb58cac3acd10999769095d887718cf88ca3923aa52e5154b133b25  dashcore-0.14.0-win32-debug.zip
+    757768311da54324ab1ae7bedb68fcc831c63461ea1692a011b05a9b08869e48  dashcore-0.14.0-win32-setup-unsigned.exe
+    98b8d0100db0e1b34674fca6e26ea448add23d1da00360d398c285eade21c511  dashcore-0.14.0-win32.zip
+    a73f3886921c9c8b83a9e50e44e5ec126357536fad8deb089f0b2195b48ed9e3  dashcore-0.14.0-win64-debug.zip
+    536c9b2527e1217257b6ab6e4fd383f870c9c4d531a13fc2e3e57852604c1f96  dashcore-0.14.0-win64-setup-unsigned.exe
+    69f1da556b4d10982cdda2da576a9494e287bd1912d2e8b022b2edaddcd4f265  dashcore-0.14.0-win64.zip
+    1a18917367779dd06976829bc64a45f187a62a86eb229694a87883fb8275c93a  src/dashcore-0.14.0.tar.gz
 - in_manifest: |-
     d1c3d816027e2b0f6c678f68ca48a42efe2c55d45378b198720a4c09966abcdf  dash-win-0.14-desc.yml
-    git:1caee15425690c71d5b98ae7d5e961c6c166f4ac dash
+    git:6982d98548b8663fc0c423e4c0b20eb84c19f597 dash
 - base_manifests: !!omap
   - bionic-amd64: |
       d451eb00b2d0e2940e26028ea9f2fb1be4f5109010e997acfb2c46229ebd9ebe  adduser_3.116ubuntu1_all.deb
@@ -366,7 +366,7 @@
     04aac57f081ffa3a2ee5ed04887be9e205df3a7ddade0027460b8042432bdbcf  zeromq-4.1.5.tar.gz
     c3e5e9fdd5004dcb542feda5ee4f0ff0744628baf8ed2dd5d66f8ca1197cb1a1  zlib-1.2.11.tar.gz
 - cache_package_manifest: |
-    b06c5215ac3d56304d23a6bb2b4db7e10596bce81e855063d55876e80ad7385d  ccache.tar
+    231f40aba0e6fa1e35fb8d0766bdeff0bdc4d9219dc1d6016cb33a6724affbc7  ccache.tar
     a7349e0894ab6015f71a151c147c4fcebeb3498e02b39164aeeff82a25340d74  depends/i686-w64-mingw32/backtrace/backtrace-rust-snapshot-2018-05-22-ebcc466699d.tar.gz
     07b503bd344a4d52d5c6e27de50b6401a978edd6cb032fb4a1813a9b4dcf0240  depends/i686-w64-mingw32/backtrace/backtrace-rust-snapshot-2018-05-22-ebcc466699d.tar.gz.hash
     43cd06c0e540f423a5efb0be7fbd36f84f27f21227e5aac5f0b2b0317dae1a2b  depends/i686-w64-mingw32/bdb/bdb-4.8.30-12105ee5fad.tar.gz

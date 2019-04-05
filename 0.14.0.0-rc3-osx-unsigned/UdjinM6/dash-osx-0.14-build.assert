@@ -1,13 +1,13 @@
 --- !!omap
 - out_manifest: |
-    0eccb439f459b9a84a26b5e639838896583cf83d838d131feb66e5e1e6de1691  dashcore-0.14.0-osx-unsigned.dmg
-    af29a0023ead7bdbd7bab7765ce95bab672b6ee8e5ed0389ee8ba5a2e6405f80  dashcore-0.14.0-osx-unsigned.tar.gz
-    f8c4e015dfb9702a2c433f04a0fe7ee9940eb002ee877d8d2ada85096a12beae  dashcore-0.14.0-osx64.tar.gz
-    c21c8943fc19374c29a273119724529fb5ee4933299ffae581bbe50932d3d31a  src/dashcore-0.14.0.tar.gz
+    813ba37d2fb223f9bc74d94d85a3a342059703d0c677dde82871c7ec15c7e79f  dashcore-0.14.0-osx-unsigned.dmg
+    90a5d899a86d818af2286f65fae2ac93aca5935a304300a8505320d28daddd54  dashcore-0.14.0-osx-unsigned.tar.gz
+    d12ddf663c2f3206fe56606d25aff72f9d925ae4a8d085100764aa9b41a923a9  dashcore-0.14.0-osx64.tar.gz
+    1a18917367779dd06976829bc64a45f187a62a86eb229694a87883fb8275c93a  src/dashcore-0.14.0.tar.gz
 - in_manifest: |-
     66f6db229d7e66c64713596ed23454d4350b751e563aa6d7089a2e5013e4f68e  dash-osx-0.14-desc.yml
     bec9d089ebf2e2dd59b1a811a38ec78ebd5da18cbbcd6ab39d1e59f64ac5033f  MacOSX10.11.sdk.tar.gz
-    git:1caee15425690c71d5b98ae7d5e961c6c166f4ac dash
+    git:6982d98548b8663fc0c423e4c0b20eb84c19f597 dash
 - base_manifests: !!omap
   - bionic-amd64: |
       d451eb00b2d0e2940e26028ea9f2fb1be4f5109010e997acfb2c46229ebd9ebe  adduser_3.116ubuntu1_all.deb
@@ -455,7 +455,7 @@
     04aac57f081ffa3a2ee5ed04887be9e205df3a7ddade0027460b8042432bdbcf  zeromq-4.1.5.tar.gz
     c3e5e9fdd5004dcb542feda5ee4f0ff0744628baf8ed2dd5d66f8ca1197cb1a1  zlib-1.2.11.tar.gz
 - cache_package_manifest: |
-    cf7a0c7b3f41248bc46ae318f3c5de5c1f6e8a629617f057e2b216fb81c79eee  ccache.tar
+    0ac94b334423afb4c2e205205bfcb886dba65642bac7dad5053214fa4f636271  ccache.tar
     622bcc07b0055ccf58adfbd0c17e1dc13b405b163f5d8ff362c71e0cc12f071f  depends/x86_64-apple-darwin11/backtrace/backtrace-rust-snapshot-2018-05-22-a6dd8ff5b72.tar.gz
     878002619fb13d79956b7ad33fb0c36d0abd468e9fdcfbe29fbbd8b4b8fd6ea3  depends/x86_64-apple-darwin11/backtrace/backtrace-rust-snapshot-2018-05-22-a6dd8ff5b72.tar.gz.hash
     222179c55a1b058c96078adb43d8eb2a4a0ac3199e532d8932c670f1256f3d0d  depends/x86_64-apple-darwin11/bdb/bdb-4.8.30-44fa6058e2d.tar.gz
