@@ -1,10 +1,10 @@
 --- !omap
 - out_manifest: |
-    50d3b91904111d1fd9b2bccbbb7ecee30e60a23ce98ce234442e61325bfa3784  dashcore-osx-signed.dmg
+    cbd041f85559086cda4ebfc5bc43834351aae1adfab9a4e9f32ec29bd8da6d48  dashcore-osx-signed.dmg
 - in_manifest: |-
     3622d30a476bc6dbe26865561316211d496ee1335e2994c076de207f26ecd5ce  dash-dmg-signer-desc.yml
     984d4505f12d95bb02068087fdc61d8e97efc4f6bf33913a2b38163e4cb272a0  dashcore-osx-unsigned.tar.gz
-    git:391b06ce208b0735ad672dcc1740954340f0cadb signature
+    git:0245138a328d264d575fc88376d97ef35f9f99d1 signature
 - base_manifests: !omap
   - bionic-amd64: |
       d451eb00b2d0e2940e26028ea9f2fb1be4f5109010e997acfb2c46229ebd9ebe  adduser_3.116ubuntu1_all.deb
