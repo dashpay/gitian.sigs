@@ -6,7 +6,7 @@
     9af9b8ec45f6fed727f25308e4002978cc0231556844f81b4275c7ac1d589c2e  dash-win-signer-desc.yml
     5a60e0a4b3e0b4d655317b2f12a810211c50242138322b16e7e01c6fbb89d92f  osslsigncode-2.0.tar.gz
     a6ce0f8862a3fd4a0a375239599571c521496efaabd10789108d368eafdfb36f  dashcore-win-unsigned.tar.gz
-    git:5d3777868f0bb87755d4f6ebd666f2af859cc725 signature
+    git:019b2c6d2a86c2d62e69098fa8cac472c20ae47e signature
 - base_manifests: !!omap
   - bionic-amd64: |
       d451eb00b2d0e2940e26028ea9f2fb1be4f5109010e997acfb2c46229ebd9ebe  adduser_3.116ubuntu1_all.deb
