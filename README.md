@@ -20,7 +20,7 @@ This should produce a few lines like
 ```
 [GNUPG:] GOODSIG 9999999999999999 some_food <some_food@some_plate.org>
 ```
-or smth like
+or something like
 ```
 [GNUPG:] FILE_START 1 0.9.9.9-win-signed/some_food/dash-win-signer-build.assert.sig
 [GNUPG:] BADSIG 9999999999999999 some_food <some_food@some_plate.org>
