@@ -1,9 +1,11 @@
 --- !omap
 - out_manifest: |
-    f6f986ba23e01c268d9f537961b97159b8f5141020d1962dae58adb5cf49dbdb  dashcore-osx-signed.dmg
+    bf277ab36e5d25828d11065510d40cea51b37124aa3565185f8607ff974500cc  dashcore-0.16.1-win32-setup.exe
+    8cafd0bee050f508a490432f20a80671ebed864924407342690a4983d12f2cd0  dashcore-0.16.1-win64-setup.exe
 - in_manifest: |-
-    3622d30a476bc6dbe26865561316211d496ee1335e2994c076de207f26ecd5ce  dash-dmg-signer-desc.yml
-    a821895f5de597cd1abf038d713ca1b36bc57cc897901d1188de58b6543e95b1  dashcore-osx-unsigned.tar.gz
+    9af9b8ec45f6fed727f25308e4002978cc0231556844f81b4275c7ac1d589c2e  dash-win-signer-desc.yml
+    5a60e0a4b3e0b4d655317b2f12a810211c50242138322b16e7e01c6fbb89d92f  osslsigncode-2.0.tar.gz
+    2e56475809e52329641ca2e899b87f743a2df005d6a4d49376017f42d9b07e03  dashcore-win-unsigned.tar.gz
     git:72016e983b784bb3c5f83acd0b18ddcd55937996 signature
 - base_manifests: !omap
   - bionic-amd64: |
@@ -526,7 +528,7 @@
       2e6dafb986ee8ebbc4e1c344fab090a41710cab878fc9cd89336cdd1740518c5  zlib1g_1%3a1.2.11.dfsg-0ubuntu2_amd64.deb
 - cache_common_manifest: ''
 - cache_package_manifest: ''
-- release: 0.16.1.0-osx-signed
-- name: dash-dmg-signer
+- release: 0.16.1.0-win-signed
+- name: dash-win-signer
 - type: build
 - optionals: 
