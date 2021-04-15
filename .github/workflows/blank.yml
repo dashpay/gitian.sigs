@@ -34,6 +34,7 @@ jobs:
         with:
           repository: dashpay/dash
           path: ./dash
+          ref: 'develop'
 
       - uses: actions/setup-python@v2
         with:
