@@ -53,6 +53,4 @@ jobs:
           echo test, and deploy your project.
           
           gpg --import dash/contrib/gitian-keys/*
-          gpg --refresh-keys
-          
           python3 main.py
