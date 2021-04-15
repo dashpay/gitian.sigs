@@ -13,7 +13,16 @@ def verify(version):
     # print(os.getcwd())
 
     # Checkout proper dash tag
-    os.chdir('../dash')
+    os.chdir('dash')
+
+    ignore_dir = ['.git', '0.12.3.1', '0.12.0.56', '0.12.3', '.github', 'dash', 'gitian-builder']
+
+    for d in ignore_dir:
+        # print("checking if", d, "is in", version)
+        if d in version:
+            # print("yeet!")
+            return
+
 
     suffices = ['-linux', '-osx-unsigned', '-win-unsigned', '-win-signed', '-osx-signed']
 
@@ -34,9 +43,7 @@ def verify(version):
 
     gitian_yml = ""
 
-    if '.git' in version or '0.12.3.1' in version or '0.12.0.56' in version or '0.12.3' in version:
-        return
-    elif 'linux' in version:
+    if 'linux' in version:
         gitian_yml = "gitian-linux.yml"
     elif 'win-unsigned' in version:
         gitian_yml = "gitian-win.yml"
@@ -50,7 +57,8 @@ def verify(version):
         print(version)
         assert False
 
-    result = subprocess.call(['bin/gverify', '-v', '-d', '../gitian.sigs/', '-r', version, '../dash/contrib/gitian-descriptors/' + gitian_yml])
+    result = subprocess.call(
+        ['bin/gverify', '-v', '-d', '../', '-r', version, '../dash/contrib/gitian-descriptors/' + gitian_yml])
     print('result', result)
     assert result is 0
     # print('\nVerifying v'+args.version+' Windows\n')
@@ -61,7 +69,6 @@ def verify(version):
     # subprocess.call(['bin/gverify', '-v', '-d', '../gitian.sigs/', '-r', args.version+'-win-signed', '../dash/contrib/gitian-descriptors/gitian-win-signer.yml'])
     # print('\nVerifying v'+args.version+' Signed MacOS\n')
     # subprocess.call(['bin/gverify', '-v', '-d', '../gitian.sigs/', '-r', args.version+'-osx-signed', '../dash/contrib/gitian-descriptors/gitian-osx-signer.yml'])
-
 
 
 def print_hi(name):
@@ -80,10 +87,8 @@ def print_hi(name):
     for version in versions:
         version.reverse()
 
-
     versions = [x[0] for x in versions]
     # print(versions)
-
 
     for version in versions:
         print(version)
@@ -100,13 +105,12 @@ def print_hi(name):
         # print(signers)
         # for s in signers:
         verify(version)
-        os.chdir('../gitian.sigs')
+        os.chdir('../')
 
     # versions = stuff.
 
     # for version in versions:
     #     print(version)
-
 
 
 # Press the green button in the gutter to run the script.
