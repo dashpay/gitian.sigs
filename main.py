@@ -33,6 +33,7 @@ def verify(version):
     print('tag', tag)
 
     result = subprocess.call(['git', 'checkout', tag])
+    assert result == 0
 
     os.chdir('..')
     # print(os.getcwd())
