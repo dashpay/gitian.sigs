@@ -68,7 +68,7 @@ def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
     print("Hi, {0}".format(name))  # Press Ctrl+F8 to toggle the breakpoint.
 
-    os.chdir('gitian.sigs')
+    # os.chdir('gitian.sigs')
     stuff = os.walk(os.getcwd())
 
     list_subfolders_with_paths = [f.path for f in os.scandir(os.getcwd()) if f.is_dir()]
