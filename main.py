@@ -10,7 +10,6 @@ import subprocess
 
 def verify(version):
     global workdir
-    # print(os.getcwd())
 
     # Checkout proper dash tag
     os.chdir('dash')
@@ -18,9 +17,7 @@ def verify(version):
     ignore_dir = ['.git', '0.12.3.1', '0.12.0.56', '0.12.3', '.github', 'dash', 'gitian-builder']
 
     for d in ignore_dir:
-        # print("checking if", d, "is in", version)
         if d in version:
-            # print("yeet!")
             return
 
 
@@ -35,14 +32,11 @@ def verify(version):
     result = subprocess.call(['git', 'checkout', tag])
     assert result == 0
 
-    os.chdir('..')
-    # print(os.getcwd())
-    os.chdir('gitian-builder')
-    # print(os.getcwd())
+    os.chdir('../gitian-builder')
 
     print('\nVerifying v' + version + '\n')
 
-    gitian_yml = ""
+    gitian_yml = ''
 
     if 'linux' in version:
         gitian_yml = "gitian-linux.yml"
@@ -55,13 +49,11 @@ def verify(version):
     elif 'osx-signed' in version:
         gitian_yml = 'gitian-osx-signer.yml'
     else:
-        print(version)
         assert False
 
     result = subprocess.call(
         ['bin/gverify', '-v', '-d', '../', '-r', version, '../dash/contrib/gitian-descriptors/' + gitian_yml])
-    print('result', result)
-    assert result is 0
+    assert result == 0
     # print('\nVerifying v'+args.version+' Windows\n')
     # subprocess.call(['bin/gverify', '-v', '-d', '../gitian.sigs/', '-r', args.version+'-win-unsigned', '../dash/contrib/gitian-descriptors/gitian-win.yml'])
     # print('\nVerifying v'+args.version+' MacOS\n')
@@ -72,16 +64,8 @@ def verify(version):
     # subprocess.call(['bin/gverify', '-v', '-d', '../gitian.sigs/', '-r', args.version+'-osx-signed', '../dash/contrib/gitian-descriptors/gitian-osx-signer.yml'])
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print("Hi, {0}".format(name))  # Press Ctrl+F8 to toggle the breakpoint.
-
-    # os.chdir('gitian.sigs')
-    stuff = os.walk(os.getcwd())
-
+def main():
     list_subfolders_with_paths = [f.path for f in os.scandir(os.getcwd()) if f.is_dir()]
-
-    # print(list_subfolders_with_paths)
 
     versions = [x.split("/") for x in list_subfolders_with_paths]
 
@@ -89,33 +73,12 @@ def print_hi(name):
         version.reverse()
 
     versions = [x[0] for x in versions]
-    # print(versions)
 
     for version in versions:
-        print(version)
-        # list_subfolders_with_paths = [f.path for f in os.scandir(os.getcwd() + "/" + version) if f.is_dir()]
-
-        # print(list_subfolders_with_paths)
-
-        # signers = [x.split("/") for x in list_subfolders_with_paths]
-        #
-        # for s in signers:
-        #     s.reverse()
-        #
-        # signers = [x[0] for x in signers]
-        # print(signers)
-        # for s in signers:
         verify(version)
         os.chdir('../')
 
-    # versions = stuff.
 
-    # for version in versions:
-    #     print(version)
-
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    main()
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
