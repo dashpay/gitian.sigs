@@ -14,7 +14,7 @@ def verify(version):
     # Checkout proper dash tag
     os.chdir('dash')
 
-    ignore_dir = ['.git', '0.12.3.1', '0.12.0.56', '0.12.3', '.github', 'dash', 'gitian-builder']
+    ignore_dir = ['.git', '.github', 'dash', 'gitian-builder', '0.12.3.1', '0.12.0.56', '0.12.3']
 
     for d in ignore_dir:
         if d in version:
