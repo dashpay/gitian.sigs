@@ -35,6 +35,7 @@ jobs:
           repository: PastaPastaPasta/dash
           path: ./dash
           ref: 'd95108f51a5fadb8920576819a810c7345c1bf8b'
+          fetch-depth: 0
 
       - uses: actions/setup-python@v2
         with:
