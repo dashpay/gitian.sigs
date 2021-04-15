@@ -43,16 +43,11 @@ jobs:
           architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
 
 
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
+      # import gpg keys from repo, gpg seems to always exit code two, so tell action to ignore any "error"
+      - name: Import GPG
         run: gpg --import --yes --always-trust dash/contrib/gitian-keys/*
         continue-on-error: true
 
-
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
-          
-          python3 main.py
+      # Check that gitian asserts don't conflict and that sigs validate
+      - name: Run Test Script
+        run: python3 check_all.py
