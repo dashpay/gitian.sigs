@@ -45,7 +45,7 @@ jobs:
 
       # import gpg keys from repo, gpg seems to always exit code two, so tell action to ignore any "error"
       - name: Import GPG
-        run: gpg --import --yes --always-trust dash/contrib/gitian-keys/*
+        run: gpg --import --yes --always-trust gitian-keys/*
         continue-on-error: true
 
       # Check that gitian asserts don't conflict and that sigs validate
