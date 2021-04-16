@@ -1,7 +1,8 @@
 PGP keys
 ========
 
-This folder contains the public keys of developers and active contributors.
+This folder contains the public keys of developers / community members that
+have produced a gitian build.
 
 The keys are mainly used to sign git commits or the build results of Gitian
 builds.
