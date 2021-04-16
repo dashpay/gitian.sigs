@@ -20,7 +20,6 @@ def verify(version):
         if d in version:
             return
 
-
     suffices = ['-linux', '-osx-unsigned', '-win-unsigned', '-win-signed', '-osx-signed']
 
     tag = version
@@ -54,14 +53,6 @@ def verify(version):
     result = subprocess.call(
         ['bin/gverify', '-v', '-d', '../', '-r', version, '../dash/contrib/gitian-descriptors/' + gitian_yml])
     assert result == 0
-    # print('\nVerifying v'+args.version+' Windows\n')
-    # subprocess.call(['bin/gverify', '-v', '-d', '../gitian.sigs/', '-r', args.version+'-win-unsigned', '../dash/contrib/gitian-descriptors/gitian-win.yml'])
-    # print('\nVerifying v'+args.version+' MacOS\n')
-    # subprocess.call(['bin/gverify', '-v', '-d', '../gitian.sigs/', '-r', args.version+'-osx-unsigned', '../dash/contrib/gitian-descriptors/gitian-osx.yml'])
-    # print('\nVerifying v'+args.version+' Signed Windows\n')
-    # subprocess.call(['bin/gverify', '-v', '-d', '../gitian.sigs/', '-r', args.version+'-win-signed', '../dash/contrib/gitian-descriptors/gitian-win-signer.yml'])
-    # print('\nVerifying v'+args.version+' Signed MacOS\n')
-    # subprocess.call(['bin/gverify', '-v', '-d', '../gitian.sigs/', '-r', args.version+'-osx-signed', '../dash/contrib/gitian-descriptors/gitian-osx-signer.yml'])
 
 
 def main():
@@ -81,4 +72,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
