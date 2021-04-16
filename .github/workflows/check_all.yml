@@ -38,6 +38,9 @@ jobs:
         run: gpg --import --yes --always-trust gitian-keys/*
         continue-on-error: true
 
+      - name: Refresh GPG keys
+        run: gpg --keyserver pool.sks-keyservers.net --refresh-keys
+
       # Check that gitian asserts don't conflict and that sigs validate
       - name: Run Test Script
         run: python3 check_all.py
