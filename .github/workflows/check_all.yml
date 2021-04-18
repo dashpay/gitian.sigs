@@ -1,0 +1,46 @@
+name: CI
+
+# Controls when the action will run. 
+on:
+  # Triggers the workflow on push or pull request events but only for the master branch
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/checkout@v2
+        with:
+          repository: devrandom/gitian-builder
+          path: ./gitian-builder
+
+      - uses: actions/checkout@v2
+        with:
+          repository: dashpay/dash
+          path: ./dash
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.x' # Version range or exact version of a Python version to use, using SemVer's version range syntax
+
+      # import gpg keys from repo, gpg seems to always exit code two, so tell action to ignore any "error"
+      - name: Import GPG
+        run: gpg --import --yes --always-trust gitian-keys/*
+        continue-on-error: true
+
+      - name: Refresh GPG keys
+        run: gpg --keyserver pool.sks-keyservers.net --refresh-keys
+
+      # Check that gitian asserts don't conflict and that sigs validate
+      - name: Run Test Script
+        run: python3 check_all.py
