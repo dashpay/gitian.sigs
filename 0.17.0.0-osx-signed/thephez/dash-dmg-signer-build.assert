@@ -1,10 +1,10 @@
 --- !!omap
-- out_manifest: 'f6f1ccfa94925ec81f7669273c4bbe9a6b16d54e51403b00255d1e0812bf6b5f  dashcore-osx-signed.dmg
+- out_manifest: '87d597c448c6aed478213da2138f3f5845bc4962e6d1cfa96bef676aece2f7fa  dashcore-osx-signed.dmg
 
 '
 - in_manifest: |-
     46940efed4004bef42170bd5cde4692a74d7d52db3b8a6f6c082cf08559e93f9  dash-dmg-signer-desc.yml
-    37ff8b4f07a5bc9501e0c2286bf5a10f7132c5ae3cf7d4a7d81db3f8d3cca49d  dashcore-osx-unsigned.tar.gz
+    9328a45e1404f7cd44131502f8d4057010f40a37cb8055df6092cfe1cdd6a554  dashcore-osx-unsigned.tar.gz
     git:76d50b4badfc719d1d2d558eefb2f392858e91b4 signature
 - base_manifests: !!omap
   - bionic-amd64: |
