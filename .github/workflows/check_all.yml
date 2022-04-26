@@ -39,7 +39,7 @@ jobs:
         continue-on-error: true
 
       - name: Refresh GPG keys
-        run: gpg --keyserver pool.sks-keyservers.net --refresh-keys
+        run: gpg --keyserver keyserver.ubuntu.com --refresh-keys
 
       # Check that gitian asserts don't conflict and that sigs validate
       - name: Run Test Script
