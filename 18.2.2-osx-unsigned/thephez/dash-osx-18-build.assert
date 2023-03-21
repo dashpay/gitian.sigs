@@ -73,9 +73,9 @@
       218a588ffe646e69dcde814634cb85bcaad1486da4fa3060937ab12ef04fed9c  gzip_1.10-0ubuntu4.1_amd64.deb
       9000eb98868252261978ff49501c0ace3124cb369c395e9f5015ddc556fe2ba6  hicolor-icon-theme_0.17-2_all.deb
       bddd3ac9a78c0f816f24622ef9f0495902da8028de9fc4b24ec8b1a36196a762  hostname_3.23_amd64.deb
-      eca8212d691d3bf2f76cd3fa69eecc4dffdbe1744614e1da96570e50f716bfc0  imagemagick-6-common_8%3a6.9.10.23+dfsg-2.1ubuntu11.5_all.deb
-      8d45daeda6780168f1dce369be4e0b50b8a6cc19a03b8a32422b1846d96f939d  imagemagick-6.q16_8%3a6.9.10.23+dfsg-2.1ubuntu11.5_amd64.deb
-      1983ad71a7a1c0ac87a60ca85d760420eadc5bcafbed693efad6d0dc17348e96  imagemagick_8%3a6.9.10.23+dfsg-2.1ubuntu11.5_amd64.deb
+      7e71153cd9420d6de0d5d3176d27d66d20a265ffae7a4735b27199d695cbd4f8  imagemagick-6-common_8%3a6.9.10.23+dfsg-2.1ubuntu11.6_all.deb
+      ab6ddf96c9c15260cbc7ccc7c7982160d601b95c62535d085e037e455156b893  imagemagick-6.q16_8%3a6.9.10.23+dfsg-2.1ubuntu11.6_amd64.deb
+      0cd4a3ef497a7bde8af0148a4f36a116b8d8c5423b1a87d276645a146d1fd7c1  imagemagick_8%3a6.9.10.23+dfsg-2.1ubuntu11.6_amd64.deb
       5628715888e797fcddf2c5b3c3923b0a76dad78916025a52e19375703dd9586c  init-system-helpers_1.57_all.deb
       7039fdfd88dd03baae1f5f2bfd97f7969d3374a212a7a7945e97e7760307497d  initramfs-tools-bin_0.136ubuntu6.7_amd64.deb
       3f5abbc587ca7d5ce37440ff1bd2be9866bd1218c1d944fe4350b0fe3404d667  initramfs-tools-core_0.136ubuntu6.7_all.deb
@@ -193,8 +193,8 @@
       f545d34c86119802fbae869a09e1077a714e12a01ef6a3ef67fdc745e5db311d  liblzma5_5.2.4-1ubuntu1.1_amd64.deb
       5eedb1499739fbc4df22d5347dfac620b919e7c271716f735c78f8f3c3fbd2f0  libmagic-mgc_1%3a5.38-4_amd64.deb
       371fe893393973bf2d0c4cc0cf00a1edce70779f4edbc00e442303db4ddda0eb  libmagic1_1%3a5.38-4_amd64.deb
-      4f7c2bc995040131cd41a6e7099ec2820d5b097e84d8fa9aae96780e72c7458d  libmagickcore-6.q16-6_8%3a6.9.10.23+dfsg-2.1ubuntu11.5_amd64.deb
-      57ffeb6156bbaa3538fb3c4c3515ce5fd8737a2d845f46c2b8c44e6411b35afd  libmagickwand-6.q16-6_8%3a6.9.10.23+dfsg-2.1ubuntu11.5_amd64.deb
+      10d6dc61b60ea87825ebb9049c350108aa809635020195f667a0a4b009655a74  libmagickcore-6.q16-6_8%3a6.9.10.23+dfsg-2.1ubuntu11.6_amd64.deb
+      d275c45cd4991cfef99e05ff4dd763d62b5d76f2cb1337b7f78621001e9da658  libmagickwand-6.q16-6_8%3a6.9.10.23+dfsg-2.1ubuntu11.6_amd64.deb
       e499b0ab0c969d0df1d8243cff224b719b44593349a0d23f905d3673aefb5f9f  libmount1_2.34-0.1ubuntu9.3_amd64.deb
       3c3c45aa50ce1ff753107766c6fea35a82c52ad11afcab0abfd0cd0c76730f87  libmpc3_1.1.0-1_amd64.deb
       4e624c616de0fa1dea3571291b05b3d6fe5f75d8667b278f9503b1eca36ffbcf  libmpdec2_2.4.2-3_amd64.deb
@@ -430,7 +430,7 @@
     c3e5e9fdd5004dcb542feda5ee4f0ff0744628baf8ed2dd5d66f8ca1197cb1a1  zlib-1.2.11.tar.gz
     91844808532e5ce316b3c010929493c0244f3d37593afd6de04f71821d5136d9  zlib-1.2.12.tar.gz
 - cache_package_manifest: |
-    c6fbe9ca96e7dbb7ecb5ef070fb814287ec291903c82104e647507dc39ff7194  ccache.tar
+    e0c747a0e6a23c32c8822aae0b70aed144004286b2d4d409b55143cd9ef09670  ccache.tar
     434ba9cb44f04524846a72041b5db9186859afb5f90a64a296247e903e077de0  depends/x86_64-apple-darwin19/backtrace/backtrace-rust-snapshot-2018-05-22-044b9352e27.tar.gz
     96c0164cec082beea527d9d44d07499d6401a24c5aa84c80b122defb8cca8d4d  depends/x86_64-apple-darwin19/backtrace/backtrace-rust-snapshot-2018-05-22-044b9352e27.tar.gz.hash
     fd9454cd385e837c04d08377c934e22b3276cf7e8f34270719e4a3c46128a462  depends/x86_64-apple-darwin19/backtrace/backtrace-rust-snapshot-2018-05-22-9f711f16dc8.tar.gz

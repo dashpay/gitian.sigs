@@ -368,7 +368,7 @@
     c3e5e9fdd5004dcb542feda5ee4f0ff0744628baf8ed2dd5d66f8ca1197cb1a1  zlib-1.2.11.tar.gz
     91844808532e5ce316b3c010929493c0244f3d37593afd6de04f71821d5136d9  zlib-1.2.12.tar.gz
 - cache_package_manifest: |
-    9d337f57589492f96afe2aecc04594cc9a20f9d3767d0d6cc38ade8ccd87a70a  ccache.tar
+    c65029fbc321208227be5040c1e72c5aad019364c7bc420e8258894cbe4e777f  ccache.tar
     5f0d9c58c01e8598aea19fe8fd589db901590f6e175014962da0b47941d58ce3  depends/x86_64-w64-mingw32/backtrace/backtrace-rust-snapshot-2018-05-22-23c7fb4ad98.tar.gz
     94f9cbcb7cc83ec5e3c8fd1ec0d7960d430df89e64b301c279d6f7f0d184466c  depends/x86_64-w64-mingw32/backtrace/backtrace-rust-snapshot-2018-05-22-23c7fb4ad98.tar.gz.hash
     9fd1494fc8edee41a51adeb507f4dd898ee395f96ad8edc093b9546d5af84faa  depends/x86_64-w64-mingw32/backtrace/backtrace-rust-snapshot-2018-05-22-5ac812f3efd.tar.gz
