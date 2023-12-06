@@ -1,4 +1,8 @@
 # gitian.sigs
+
+DEPRECATED: We no longer use Gitian to produce deterministic binaries; we use [Guix](https://guix.gnu.org/) instead.
+You can find corresponding signatures in the [guix.sigs repository](https://github.com/dashpay/guix.sigs).
+
 This repository is for deterministic build results for Dash releases.
 
 See the [release process](https://github.com/dashpay/dash/blob/master/doc/release-process.md)
